@@ -1,6 +1,8 @@
 <?php 
+$is_invalid = false; 
+
 //checks if request matches data from the records
-if ($_SERVER["REQUEST METHOD"] === "POST") { 
+if ($_SERVER["REQUEST_METHOD"] === "POST") { 
 
     $mysqli = require __DIR__ . "/database.php"; //gets the database connection
 
@@ -14,6 +16,24 @@ if ($_SERVER["REQUEST METHOD"] === "POST") {
 
     //to get the data from the result method "fetch_assoc()"
     $user = $result->fetch_assoc(); //fetch_assoc() fetches a result row as an associative array
+
+    if ($user) {
+        
+        if (password_verify($_POST["password"], $user["password_hash"])) {
+
+            session_start();
+
+            session_regenerate_id(); //regenerates the session id (prevents session fixation attacks)
+
+            $_SESSION["user_id"] = $user["id"];
+
+            header("Location: index.php");
+            exit;
+        }
+     }
+
+    $is_invalid = true;
+
 }
 ?>
 
@@ -32,17 +52,25 @@ if ($_SERVER["REQUEST METHOD"] === "POST") {
   <body>
 <h1>Login</h1>
 
+<?php if ($is_invalid): ?>
+    <em>Invalid Login</em>
+ <?php endif; ?> <!--if the login is invalid, it will display "Invalid Login" -->
+ 
 
 <form method="post">
     <div>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" 
+        value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
     </div>
     <div>
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
+        <input type="password" name="password" id="password">
     </div>
-    <button>Submit</button>
+
+    <button>Login</button>
 </form>
+
+<button><a href="signup.html">Create User</a></button>
   </body>
 </html>

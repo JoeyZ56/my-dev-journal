@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-AggregationCursor.get("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 

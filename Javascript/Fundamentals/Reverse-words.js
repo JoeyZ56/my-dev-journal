@@ -19,7 +19,7 @@ function reverseWords(str) {
 /*
   Approach:
     - Split the string into an array of words
-    - Loop through the array and reverse each word
+    - Loop through the array and reverse each word (mapxs)
     - Join the array back into a string
     - Return the string
   */

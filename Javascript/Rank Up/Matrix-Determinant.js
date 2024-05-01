@@ -58,4 +58,10 @@ function determinant(m) {
         2. If yes, return the determinant of the matrix
         3. Else, iterate through the matrix and calculate the determinant of the matrix
         4. Return the determinant
+
+    What did I learn from this?
+        1. Recursion - calling a function from within itself
+        2. Matrix operations - determinant of a matrix
+        3. Conditional statements - if-else
+        4. Looping - for loop
   */

@@ -4,6 +4,7 @@ import "./App.css";
 //Pages
 import Home from "./pages/Home/Home";
 import MagicEightball from "./pages/Mini-Projects/MagicEightball/MagicEightball";
+import TodoList from "./pages/Mini-Projects/Todo-List/Todo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/eightball" element={<MagicEightball />} />
+          <Route path="/todo-list" element={<TodoList />} />
         </Routes>
       </Router>
     </div>

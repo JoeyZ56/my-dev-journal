@@ -11,7 +11,7 @@ const Todo = () => {
 
   const handleShowTodo = (e) => {
     e.preventDefault();
-    const trimmedTodo = makeTodo.trim();
+    const trimmedTodo = makeTodo.trim().toUpperCase();
 
     setShowTodo([...showTodo, trimmedTodo]);
     setMakeTodo("");

@@ -30,3 +30,24 @@
     }
   }
 }
+
+//back btn
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #050505;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #000;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #070707;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+}

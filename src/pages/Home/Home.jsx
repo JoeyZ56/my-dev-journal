@@ -11,6 +11,9 @@ const Home = () => {
         <Link to="/todo-list" className="project-link2">
           Todo List
         </Link>
+        <Link to="/counter" className="project-link3">
+          Counter
+        </Link>
       </div>
     </div>
   );

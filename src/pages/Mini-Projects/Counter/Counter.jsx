@@ -12,15 +12,24 @@ const Counter = () => {
     setCounter((prevCount) => prevCount - 1);
   };
 
+  const handleBackBtn = () => {
+    window.history.back();
+  };
+
   return (
-    <div className="counter-main-container">
-      <h1>Counter</h1>
-      <h1>{counter}</h1>
-      <div className="counter-btn-container">
-        <button onClick={handleIncrement}>+</button>
-        {counter > 0 ? <button onClick={handleDecrement}>-</button> : NaN}
+    <>
+      <button onClick={handleBackBtn} className="back-btn">
+        Back
+      </button>
+      <div className="counter-main-container">
+        <h1>Counter</h1>
+        <h1>{counter}</h1>
+        <div className="counter-btn-container">
+          <button onClick={handleIncrement}>+</button>
+          {counter > 0 ? <button onClick={handleDecrement}>-</button> : NaN}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

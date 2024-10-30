@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   height: 30vh;
+  gap: 0.5rem;
 }
 
 //project 1
@@ -86,6 +87,32 @@
 
   &:hover {
     background-image: url("./assets/counter/counter.png");
+    background-size: cover;
+
+    color: transparent;
+  }
+}
+//project 4
+.project-link4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 7rem;
+  height: 7rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #050505;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-image: url("./assets/UserForm/UserForm.png");
     background-size: cover;
 
     color: transparent;

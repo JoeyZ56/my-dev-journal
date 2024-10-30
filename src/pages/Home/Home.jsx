@@ -14,6 +14,9 @@ const Home = () => {
         <Link to="/counter" className="project-link3">
           Counter
         </Link>
+        <Link to="/user-form" className="project-link4">
+          User Form
+        </Link>
       </div>
     </div>
   );

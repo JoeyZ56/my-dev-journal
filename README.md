@@ -1,9 +1,39 @@
-# React + Vite
+<div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Sudo Code Guidelines
 
-Currently, two official plugins are available:
+## 1. Understand the input:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# javascript-practice
+     - Input: Describe the data type (e.g., array, object, string).
+     - Output: Describe what the function is expected to return.
+
+## 2. Break down the problem:
+
+    - Step 1: Validate the input.
+    - Step 2: Initialize any required variables or structures.
+    - Step 3: Perform the main logic (e.g., loop, recursion, etc.).
+    - Step 4: Collect or compute the result.
+
+## 3. Visualize data flow:
+
+    - Write an example input/output pair.
+    - Sketch how the data changes at each step.
+
+## 4. Pseudo-code:
+
+    - Validate input:
+         - If input is not valid, return an error or default value.
+     - Initialize:
+        - Create variables, counters, or structures as needed.
+    - Process:
+        - For each item in the input, perform specific operations.
+        - Handle nested or special cases if needed.
+    - Return:
+        - Combine and return the final result.
+
+## 5. Test:
+
+    - Run through examples manually using the pseudo-code.
+    - Identify potential edge cases and adjust accordingly.
+
+</div>

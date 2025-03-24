@@ -1,0 +1,34 @@
+/*
+Write a function that takes an array of strings as an argument and 
+returns a sorted array containing the same strings, 
+ordered from shortest to longest.
+
+For example, if this array were passed as an argument:
+
+["Telescopes", "Glasses", "Eyes", "Monocles"]
+
+Your function would return the following array:
+
+["Eyes", "Glasses", "Monocles", "Telescopes"]
+
+All of the strings in the array passed to your function will be 
+different lengths, so you will not have to decide how to 
+order multiple strings of the same length.
+*/
+
+function sortByLength(array) {
+  // Return an array containing the same strings,
+  // ordered from shortest to longest
+
+  const newArr = array.sort((a, b) => a.length - b.length);
+
+  return newArr;
+}
+
+console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"]));
+
+/*
+Approach:
+    1. set a variable "newArray" to to the array parameter and 
+    sort it from smallest to longest lengthed 'string' in the array.
+*/

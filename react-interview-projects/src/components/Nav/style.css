@@ -1,0 +1,19 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #111;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}

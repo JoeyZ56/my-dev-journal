@@ -21,7 +21,7 @@ const people = [
 
 const groupObjects = (arr) => {
   return arr.reduce((acc, person) => {
-    //If the role aready exists in 'acc' push the person into it
+    //If the role already exists in 'acc' push the person into it
     if (acc[person.role]) {
       acc[person.role].push(person);
     } else {

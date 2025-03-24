@@ -24,7 +24,7 @@ const myBooks = [
 
 const organizeBooksByGenre = (books) => {
   return books.reduce((acc, book) => {
-    // if genre arleady exists push to new object
+    // if genre already exists push to new object
     if (acc[book.genre]) {
       acc[book.genre].push(book);
     } else {

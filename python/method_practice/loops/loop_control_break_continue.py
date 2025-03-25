@@ -1,4 +1,18 @@
 # Loop Control: Break & Continue
+"""
+This script demonstrates the use of loop control statements `break` and `continue` 
+in Python. It performs the following tasks:
+
+1. Creates a list of numbers from 1 to 20 using the `range` function.
+2. Iterates through the list using a `for` loop.
+3. Skips even numbers using the `continue` statement.
+4. Stops the loop if a number is greater than 15 using the `break` statement.
+5. Prints the remaining numbers that are odd and less than or equal to 15.
+
+Key Concepts:
+- `continue`: Skips the current iteration of the loop and moves to the next iteration.
+- `break`: Exits the loop prematurely when a specified condition is met.
+"""
 
 # Prompt:
 # Loop through numbers 1–20.
@@ -17,8 +31,4 @@ for num in numbers:
         break
     print(num)
 
-# Notes:
-# Create a dynamic list with range
-# Use a for loop to loop through the list
-# If a number in the list is even, skip it (use continue)
-# If a number is greater than 15, stop the loop (use break)
+

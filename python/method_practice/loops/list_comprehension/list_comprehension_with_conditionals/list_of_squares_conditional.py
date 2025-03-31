@@ -20,3 +20,7 @@ A list of squares of even numbers within the specified range.
 numbers = list(range(21))
 list_of_squares = [num**2 for num in numbers if not num % 2]
 print(list_of_squares)
+
+
+
+

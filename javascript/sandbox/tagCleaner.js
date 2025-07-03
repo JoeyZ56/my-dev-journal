@@ -1,3 +1,5 @@
+const { set } = require("mongoose");
+
 const tags = ["Dinner", " dinner ", "Quick", "quick", "Healthy ", "healthy"];
 
 /*
@@ -32,3 +34,30 @@ function tagCleaner2() {
 }
 
 console.log(tagCleaner2());
+
+const rawInput = " Dinner, quick ,Healthy, dinner , QUICK, breakfast ";
+/*
+ 	1.	Split the string into individual tags (by comma)
+	2.	Clean whitespace + lowercase
+	3.	Remove duplicates
+	4.	Return a clean array of tags
+
+ */
+
+function tagCleaner3() {
+  const splitTags = rawInput.split(",");
+
+  const cleaned = splitTags.map((tag) => tag.trim().toLowerCase());
+
+  /*The test() method of RegExp instances executes a 
+  search with this regular expression for a 
+  match between a regular expression and a specified string. 
+  Returns true if there is a match; false otherwise.
+  */
+  const filtered = cleaned.filter((item) => /[a-z]/.test(item));
+
+  const unique = [...new Set(filtered)];
+  return unique;
+}
+
+console.log(tagCleaner3());

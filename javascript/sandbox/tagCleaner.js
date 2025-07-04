@@ -1,5 +1,3 @@
-const { set } = require("mongoose");
-
 const tags = ["Dinner", " dinner ", "Quick", "quick", "Healthy ", "healthy"];
 
 /*
@@ -18,13 +16,14 @@ function tagCleaner() {
   return unique;
 }
 
+console.log(tagCleaner());
+
 /*
 🧰 Set — Best when:
 	•	You just want to remove exact duplicates, fast and clean
 	•	You don’t care about deduplication logic — equality is enough
 	•	You want the shortest and most efficient code
 */
-console.log(tagCleaner());
 
 function tagCleaner2() {
   const cleaned1 = tags.map((tag) => tag.trim().toLowerCase());
@@ -35,7 +34,6 @@ function tagCleaner2() {
 
 console.log(tagCleaner2());
 
-const rawInput = " Dinner, quick ,Healthy, dinner , QUICK, breakfast ";
 /*
  	1.	Split the string into individual tags (by comma)
 	2.	Clean whitespace + lowercase
@@ -43,6 +41,8 @@ const rawInput = " Dinner, quick ,Healthy, dinner , QUICK, breakfast ";
 	4.	Return a clean array of tags
 
  */
+
+const rawInput = " Dinner, quick ,Healthy, dinner , QUICK, breakfast ";
 
 function tagCleaner3() {
   const splitTags = rawInput.split(",");

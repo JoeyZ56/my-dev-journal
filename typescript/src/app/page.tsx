@@ -1,5 +1,6 @@
 "use client";
 import RecipeCardShowCase from "@/sandbox/RecipeCardShowCase";
+import AvailablePetsShowCase from "@/sandbox/AvailablePetsShowCase";
 
 const Home = () => {
   return (
@@ -7,6 +8,9 @@ const Home = () => {
       <div className="">
         {" "}
         <RecipeCardShowCase />
+      </div>
+      <div>
+        <AvailablePetsShowCase />
       </div>
     </div>
   );

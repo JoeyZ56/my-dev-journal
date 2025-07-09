@@ -1,0 +1,7 @@
+dog
+cat
+parrot
+lizard
+dog
+cat
+dog

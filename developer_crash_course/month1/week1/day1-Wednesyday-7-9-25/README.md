@@ -67,3 +67,10 @@ Once that works, challenge yourself:
 • What did you learn today?
 • What tripped you up?
 • What would you teach someone else based on this?
+
+🗒️ Journal
+Today I learned how to read a file in Python, how to use openai's api to talk with a bot, and important Python methods such as [.sorted(), .keys(), and f].
+
+What tripped me up the most was getting the file path correct, in order to get the api key from openai in my .env, which was a valuable lesson in understanding the levels of file structures.
+
+What I would teach someone else about all this, is that error messages are easier to understand if you read them a few times, they do a good job telling you exactly what is going wrong!

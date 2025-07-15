@@ -1,0 +1,31 @@
+# Node
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+**/dist/
+**/.next/
+
+# Python
+**/.venv/
+**/__pycache__/
+**/.mypy_cache/
+**/.pytest_cache/
+
+# PHP
+**/vendor/
+
+# Mac and system junk
+.DS_Store
+
+# Logs
+**/logs/
+**/*.log
+
+# Environment files (if you're not committing them)
+**/.env
+**/.env.*
+
+# Build and temporary
+**/build/
+**/coverage/
+**/tmp/

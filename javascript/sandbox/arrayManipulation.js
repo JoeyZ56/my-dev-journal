@@ -12,9 +12,8 @@ Goal: Write a function that:
 */
 
 function numberDoubled(arr) {
-  const doubledArr = arr.map((doubled) => {
-    return doubled * 2;
-  });
+  const doubledArr = arr.map((doubled) => doubled * 2);
+
   return doubledArr;
 }
 
